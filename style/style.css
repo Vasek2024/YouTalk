@@ -1,0 +1,1146 @@
+/* обнуление стилей */
+@import '/style/reset.css';
+@import '/style/normalize.css';
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+
+/* 1rem = 16px */
+
+/* header */
+.header {
+  margin: 0 auto 1.2rem auto;
+  padding: 0 1rem;
+  /* min-width: 288px; */
+  height: 100%;
+  border-bottom: 1px solid #EFF5FB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* прячим навигацию и кнопку Подобрать психолога*/
+.header__nav,
+.header__button {
+  display: none;
+}
+/* кнопка картинка бургера */
+.header__burger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
+/* хлебные крошки */
+.crumbs {
+  padding: 0 1rem;
+  /* padding-top: 24px; */
+  margin: 0 auto;
+  /* width: 288px; */
+}
+.crumbs__nav {
+  display: inline-flex;
+  align-items: center;
+}
+.crumbs__nav li {
+  margin-right: 8px;
+}
+.crumbs__nav li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.7);
+  text-decoration: none;
+}
+.crumbs__nav li a:hover {
+  color: #0ecec1;
+}
+
+
+/* навигация с перемоткой */
+.scrol {
+  padding: 0 1rem;
+  margin: 0 auto 1.4rem auto;
+  /* width: 288px; */
+}
+.scrol__title { /* заголовок блок */
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 133%;
+  color: #333;
+}
+.scrol__nav { /* ul */
+  display: flex; /* элементв в ряд */
+  overflow-x: auto; /*  */
+  scrollbar-width: none; /* убираем скролл */
+}
+.scrol__icon { /* ссылка, в ней картинка смайлик */
+  display: flex;
+  align-items: center; /* выравниваем элементы между собой по высоте */
+  justify-content: space-around; /* свободное пространство делится поровну между элементами*/
+  gap: .3rem; /* отступ между элементами */
+}
+.scrol__nav li {
+  padding: .4rem .6rem;
+  margin-right: .6rem;
+  border: .1rem solid #c1c5cd;
+  border-radius: 1.3rem;
+  white-space: nowrap; /* не переносить контент в нутри блока */
+}
+.scrol__nav li:hover { /* при наведении меняем рамку и цвет у li */
+  border: .2px solid #16c8bb;
+  border-radius: 24px;
+  background: #f9fdfd;
+}
+.scrol__nav li a { /* ссылка */
+  font-weight: 600;
+  font-size: .9rem;
+  color: #333;
+  text-decoration: none; /* убираем подчёркивание ссылок */
+}
+.scrol__nav li a:hover{
+  color: #16c8bb;;
+}
+
+
+/* общий контейнер под все секции */
+.main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* width: 288px; */
+}
+.main img { /* все картинки в контенте */
+  border-radius: 1.1rem 1.1rem 0px 0px; /* бордер */
+  width: 100%; /* ширина картинки под блок в котором находится */
+}
+.main__top { /* прячим верхний блок с контентом (для мобилок) */
+  display: none;
+}
+.main__unic { /* ощий блок с иконками (с конём) */
+  position: absolute; /* позиционируем этот блок относительно родителя */
+}
+.main__laic { /* блок с иконкой и span */
+  margin: .6rem;
+  border: .1rem solid #c1c5cd;
+  border-radius: 1.4rem;
+  padding: .4rem;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex; /* делаем флексом */
+  justify-content: flex-start; /* ровняем к левому краю (по умолчанию) */
+  align-items: center; /* ровняем по высоте */
+  gap: .3rem; /* отступ между элементами */
+}
+.main__unic img { /* иконка с конём */
+  width: 1.3rem;
+}
+.main__sptop, /* span */
+.main__spdot {
+  font-weight: 600;
+  font-size: .7rem;
+  line-height: 143%;
+  color: #333;
+}
+
+
+/* секции с контентом в нижнем контейнере main__wrap */
+.main__emotion,
+.main__sport,
+.main__slip,
+.main__pool,
+.main__anger,
+.main__study,
+.main__anxiety,
+.main__garbage {
+  padding-bottom: 1rem; 
+  margin-bottom: 1rem;/* отступ между блоками */
+  border: 2px solid #dedede; /* бордер вокруг */
+  border-radius: 1.1rem; /* скругление */
+  /* display: block; */
+  position: relative; /* относительно этих блоков позиционировались блоки с иконкой и span */
+}
+.main__top-emotion-title, /* заголовки */
+.main__top-sport-title,
+.main__emotion-title,
+.main__sport-title,
+.main__slip-title,
+.main__pool-title,
+.main__anger-title,
+.main__study-title,
+.main__anxiety-title,
+.main__garbage-title {
+  padding: 1rem 1rem .2rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 144%;
+  color: #333;
+}
+.main__top-emotion-author, /* span автор */
+.main__top-sport-author,
+.main__emotion-author,
+.main__sport-author,
+.main__slip-author,
+.main__pool-author,
+.main__anger-author,
+.main__study-author,
+.main__anxiety-author,
+.main__garbage-author {
+  padding: 0 1rem .6rem 1rem;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #494949;
+}
+.main__top-emotion-article, /* параграф */
+.main__top-sport-article,
+.main__emotion-article,
+.main__sport-article,
+.main__slip-article,
+.main__pool-article,
+.main__anger-article,
+.main__study-article,
+.main__anxiety-article,
+.main__garbage-article {
+  padding: 0 1rem .6rem 1rem;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 143%;
+  color: #333;
+}
+.main__top-emotion-date, /* span с датой */
+.main__top-sport-date,
+.main__emotion-date,
+.main__sport-date,
+.main__slip-date,
+.main__pool-date,
+.main__anger-date,
+.main__study-date,
+.main__anxiety-date,
+.main__garbage-date {
+  padding: 0 0 0 1rem;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #868686;
+}
+.main__clic { /* кнопка ЕЩЁ */
+  margin: 1.5rem auto 3.3rem auto;
+  /* margin: 0 0 3.5rem 4rem; */
+  border-radius: .2rem;
+  padding: .0rem 1rem;
+  width: 11.2rem;
+  height: 3rem;
+  background: #35b3a9;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+.main__clic:hover {
+  background: #23a89d;
+}
+.main__anger, /* скрываем блоки со статьями для мобилки */
+.main__study,
+.main__anxiety,
+.main__garbage {
+  display: none;
+}
+
+/* подвал */
+.footer {
+  margin: 0 auto; /* ровняем блок по центру */
+  padding: 2rem 1rem; /* общий падинг верх-низ и лево-право */
+  background-color: #2963A3;
+  display: grid; /* разбиваем блок на сетку */
+  grid-template-columns: repeat(12, 1fr); /* указываем 12 колонок (думаю так точнее выставить ячейки относительно друг друга) */
+  row-gap: .5rem; /* расстояние между секциями сетки */
+}
+.footer__section-nav { /* навигация ul */
+  display: grid; /* так как в списке много li, то */
+  grid-template-columns: auto auto; /* делим на две колонки */
+  grid-template-rows: repeat(5, auto); /* и 5 рядов */ 
+  grid-column: 1/13; /* блок занимает весь верхний ряд  */
+  justify-content: space-between; /* раскидали колонки по краям */
+}
+/*  */
+.footer__section-nav a { /* ссылки */
+  text-decoration: none; /* убираем подчёркивание */
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #fff;
+}
+.footer__section-nav a:hover { /* при наведении на ссылку */
+  color: #06a6c2;
+}
+.footer__form-title { /* параграф у формы  */
+  grid-column: 1/13; /* занимаем весь ряд */
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 144%;
+  color: #fff;
+}
+.footer__sear{ /* блок с полем ввода и  svg */
+  grid-column: 1/13; /* занимаем весь ряд */
+  position: relative; /* внём позиционируем кнопку с svg */
+}
+.footer__em {  /* поле ввода */
+  padding: 0 0 0 1rem; /* отступ текста в поле ввода */
+  border: .1rem solid rgba(157, 157, 157, 0.2); /* бордер с затемнением */
+  border-radius: .2rem;
+  width: 100%;
+  /* box-sizing: border-box; */
+  height: 3rem; /* высота поля */
+  font-weight: 400; /* толщина текста */
+  font-size: .9rem; /* размер шрифта */
+  line-height: 143%;
+  color: #9d9d9d;
+}
+.footer__vector { /* сама кнопка с svg внутри */
+  padding: 0;
+  margin: 0 0 0 -3.3rem; /* подставляем к полю ввода данных */
+  width: 3.3rem;
+  height: 2.9rem;
+  position: absolute; /* её позицианируем относительно родителя */
+}
+ 
+.footer__vector-bt{ /* svg иконка в кнопке */
+  margin: -.1rem 0 0 -0.2rem; /* подставляем к полю ввода данных */
+}
+.footer__form-agreement { /* параграф */
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  opacity: 0.7; /* затемнение */
+  grid-column: 1/13; /* весь ряд */
+}
+.footer__participant { /* блок с иконками.  */
+  padding: 0 0 .9rem 0;
+  border-bottom: 1px solid #9D9D9D;
+  display: grid; /* его самого деаем grid */
+  grid-template-columns: repeat(6 1fr); /* 6 колонок с авто шириной. И расстовляем в нём иконки */
+  grid-column: 1/13; /* весь ряд */
+}
+/* иконки ставим по местам */
+.footer__icon-sk { /* Sk */
+  padding-bottom: 1.1rem;
+  grid-column: 1/3; /* весь ряд */
+}
+.footer__icon-part { /* участник */
+  grid-column: 3/7;
+}
+.footer__icon-w { /* вк */
+  grid-column: 1/2;
+}
+.footer__icon-tel { /* тел */
+  grid-column: 2/3;
+}
+.footer__icon-tvit { /* твит */
+  padding-right: 10px;
+  grid-column: 3/4;
+}
+.footer__icon-dz { /* дзен */
+  grid-column: 4/5;
+}
+.footer__data { /* span дата */
+  /* padding: 0 16px 20px 16px; */
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 143%;
+  color: #fff;
+  opacity: .7;
+  grid-column: 1/13; /* весь ряд */
+}
+.footer__doc { /* span Юр док */
+  /* padding: 0 16px 20px 16px; */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 143%;
+  color: #fff;
+  opacity: .7;
+  grid-column: 1/13; /* весь ряд */
+}
+.footer__mani { /* span способ оплаты */
+  /* padding: 0 16px 37px 16px; */
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 143%;
+  color: #fff;
+  opacity: 0.7;
+  grid-column: 1/13; /* весь ряд */
+}
+
+
+
+/*  */
+/* media запросы. Если разрешение экрана больше указанного, то выполняем запрос */
+
+/* @media screen and (max-width: 786px){
+  .scrol__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .main__wrap {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+
+
+  .main__anger,
+  .main__study,
+  .main__anxiety,
+  .main__garbage {
+    display: block;
+  }
+
+  .main__emotion {
+    grid-column: 1 / 5;
+    grid-row: 1/2;
+  }
+
+  .main__sport {
+    grid-column: 1 / 5;
+    grid-row: 2/3;
+  }
+
+  .main__slip {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .main__pool {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+  .main__anger {
+    grid-column: 1/3;
+    grid-row: 4/5;
+
+  }
+
+  .main__study {
+    grid-column: 3/5;
+    grid-row: 4/5;
+
+  }
+
+  .main__anxiety {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .main__garbage {
+    grid-column: 3/5;
+    grid-row: 5/6;
+
+  }
+
+  .main__clic {
+    grid-column: 1/5;
+    grid-row: 6/7;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 415px){
+  .scrol__nav {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 320px){
+  .footer__vector { 
+    display: none; 
+  }
+} */
+/* @media screen and (max-width: 415px){
+  .footer__vector { 
+    display: inline-block; 
+  }
+} */
+/* @media screen and (max-width: 768px){
+  .scrol__nav {
+    display: flex;
+    gap: 8px;
+  }
+  .main__top {
+    display: inline-block;
+  }
+} */
+
+
+
+
+@media (max-width: 320px){
+  .footer__vector { 
+    display: none; 
+  }
+}
+@media screen and (min-width: 414px) {
+
+  .header,
+  .crumbs,
+  .scrol,
+  .main,
+  .footer {
+    /* width: 347px; */
+  }
+
+  /* .main__clic {
+    margin: 0;
+    padding: 0;
+    margin: 0 80px 59px 80px;
+  } */
+  .footer__vector { 
+    display: inline-block; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .header,
+  .crumbs,
+  .scrol,
+  .main,
+  .footer {
+    /* width: 728px; */
+  }
+
+  .scrol__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+
+  .main__top {
+    display: none;
+  }
+
+  .main__wrap {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+
+
+  .main__anger,
+  .main__study,
+  .main__anxiety,
+  .main__garbage {
+    display: block;
+  }
+
+  .main__emotion {
+    grid-column: 1 / 5;
+    grid-row: 1/2;
+  }
+
+  .main__sport {
+    grid-column: 1 / 5;
+    grid-row: 2/3;
+  }
+
+  .main__slip {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .main__pool {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+  .main__anger {
+    grid-column: 1/3;
+    grid-row: 4/5;
+
+  }
+
+  .main__study {
+    grid-column: 3/5;
+    grid-row: 4/5;
+
+  }
+
+  .main__anxiety {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .main__garbage {
+    grid-column: 3/5;
+    grid-row: 5/6;
+
+  }
+
+  .main__clic {
+    grid-column: 1/5;
+    grid-row: 6/7;
+    justify-self: center;
+  }
+
+  .footer__section-nav {
+    /* background-color: #333; */
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    margin-right: 24px;
+    /* grid-column-gap: 30px; */
+    grid-column: 1/6;
+    grid-row: 1/4;
+  }
+
+  .footer__section-nav>li>a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 250%;
+    color: #fff;
+  }
+
+  .footer__form-title {
+    grid-column: 6/13;
+  }
+
+  .footer__sear {
+    grid-column: 6/13;
+  }
+
+  .footer__form-agreement {
+    grid-column: 6/13;
+  }
+
+  .footer__participant {
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    grid-column: 1/13;
+    align-items: center;
+  }
+
+  .footer__icon-sk {
+    grid-column: 1/3;
+  }
+
+  .footer__icon-part {
+    padding-bottom: 1.1rem;
+    grid-column: 3/5;
+  }
+
+  .footer__icon-w {
+    grid-column: 1/2;
+  }
+
+  .footer__icon-tel {
+    grid-column: 2/3;
+  }
+
+  .footer__icon-tvit {
+    padding-right: 10px;
+    grid-column: 3/4;
+  }
+
+  .footer__icon-dz {
+    grid-column: 4/13;
+  }
+
+  .footer__data {
+    padding: 0 16px 20px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: .7;
+    grid-column: 1/4;
+  }
+
+  .footer__doc {
+    padding: 0 16px 20px 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: .7;
+    grid-column: 4/8;
+  }
+
+  .footer__mani {
+    padding: 0 16px 37px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: 0.7;
+    grid-column: 8/13;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .header,
+  .crumbs,
+  .scrol,
+  .main,
+  .footer {
+    /* width: 960px; */
+    /* padding: 0; */
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__nav {
+    display: inline;
+  }
+
+  .header__nav ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header__nav ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #333;
+  }
+
+  .header__nav ul li a:hover {
+    color: #35b3a9;
+  }
+
+  .header__button {
+    margin: 20px 0 20px 0;
+    display: inline;
+    border: 1px solid #e3f5f5;
+    border-radius: 4px;
+    width: 230px;
+    height: 48px;
+    background: #e3f5f5;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #03b2a5;
+    cursor: pointer;
+  }
+
+
+  .main__wrap {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+
+  .main__anger,
+  .main__study,
+  .main__anxiety,
+  .main__garbage {
+    display: block;
+  }
+
+  .main__emotion {
+    grid-column: 1 / 4;
+    grid-row: 1/2;
+  }
+
+  .main__sport {
+    grid-column: 4/7;
+    grid-row: 1/2;
+  }
+
+  .main__slip {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .main__pool {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+
+  .main__anger {
+    grid-column: 5/7;
+    grid-row: 2/3;
+
+  }
+
+  .main__study {
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+  }
+
+  .main__anxiety {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+  .main__garbage {
+    grid-column: 5/7;
+    grid-row: 3/4;
+
+  }
+
+  .main__clic {
+    grid-column: 1/7;
+    grid-row: 4/5;
+    justify-self: center;
+  }
+
+
+  .footer {
+    padding-top: 40px;
+    column-gap: 20px;
+  }
+
+  .footer__section-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 1/5;
+    /* column-gap: 120px; */
+  }
+
+  .footer__section-nav>li>a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 250%;
+    color: #fff;
+  }
+
+  .footer__form-title {
+    grid-column: 5/10;
+  }
+
+  .footer__sear {
+    grid-column: 5/9;
+  }
+
+  .footer__form-agreement {
+    grid-column: 5/10;
+  }
+
+  .footer__participant {
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-column: 10/13;
+    grid-row: 1/3;
+  }
+
+  .footer__icon-sk {
+    grid-column: 1/3;
+  }
+
+  .footer__icon-part {
+    grid-column: 3/5;
+  }
+
+  .footer__icon-w {
+    grid-column: 1/2;
+  }
+
+  .footer__icon-tel {
+    grid-column: 2/3;
+  }
+
+  .footer__icon-tvit {
+    padding-right: 10px;
+    grid-column: 3/4;
+  }
+
+  .footer__icon-dz {
+    grid-column: 4/5;
+  }
+
+  .footer__line {
+    margin-bottom: 24px;
+    height: 1px;
+    background: #9d9d9d;
+    opacity: 0.3;
+    grid-column: 1/13;
+    grid-row: 4/5;
+  }
+
+  .footer__data {
+    padding: 0 16px 20px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: .7;
+    grid-column: 1/4;
+  }
+
+  .footer__doc {
+    padding: 0 16px 20px 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: .7;
+    grid-column: 4/8;
+  }
+
+  .footer__mani {
+    padding: 0 16px 37px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    opacity: 0.7;
+    grid-column: 8/13;
+  }
+}
+
+@media screen and (min-width:1440px) {
+    .header,
+    .crumbs,
+    .scrol,
+    .main,
+    .footer {
+      padding: 40px 120px 0 120px
+      /* width: 1200px; */
+    }
+    .main__wrap{
+      padding: 40px 0 0 0;
+    }
+
+    
+    .main {
+      background-image: url(/img/svg/fon-top.svg);
+      background-repeat: no-repeat;
+      background-position: 0 250px;
+    }
+
+    
+    .main__top {
+      display: flex;
+      background-image: url(/img/svg/fon-top.svg);
+      background-repeat: no-repeat;
+      background-position: 0 250px;
+    }
+
+    .main__top-emotion,
+    .main__top-sport {
+      min-width: 588px;
+      height: 500px;
+      border: 2px solid #dedede;
+      border-radius: 16px;
+    }
+
+    .main__top-emotion {
+      margin-right: 24px;
+    }
+
+    .main__top-emotion-title,
+    .main__top-sport-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 144%;
+      color: #333;
+    }
+
+    .main__top-emotion-author,
+    .main__top-sport-author {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #494949;
+    }
+
+    .main__top-emotion-article,
+    .main__top-sport-article {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #333;
+    }
+
+    .main__top-emotion-date,
+    .main__top-sport-date {
+      margin-top: auto;
+    }
+
+    
+    .main__wrap {
+      display: flex;
+      margin-top: 707px;
+      margin-bottom: 40px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .main__wrap:first-child {
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    
+    .main__unic img {
+      margin-bottom: -4px;
+      width: 14px;
+    }
+
+    
+    .main__sptop,
+    .main__spdot {
+      font-weight: 6400;
+      font-size: 10px;
+      color: #333;
+    }
+
+    .main__clic {
+      display: none;
+    }
+
+    
+    .main__emotion,
+    .main__sport,
+    .main__slip,
+    .main__pool,
+    .main__anger,
+    .main__study {
+      max-width: 384px;
+    }
+
+    
+    .main__anxiety,
+    .main__garbage {
+      display: none;
+    }
+
+    .footer {
+      column-gap: 91px;
+      padding-top: 40px;
+    }
+
+    .footer__section-nav {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column: 1/5;
+      /* justify-items: center; */
+    }
+
+    .footer__section-nav>li>a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 250%;
+      color: #fff;
+    }
+
+    .footer__form-title {
+      grid-column: 5/10;
+    }
+
+    .footer__em {
+      grid-column: 5/10;
+    }
+
+    .footer__form-agreement {
+      grid-column: 5/10;
+    }
+
+    .footer__participant {
+      border-bottom: none;
+      display: grid;
+      grid-template-columns: repeat(4 1fr);
+      grid-column: 10/13;
+      grid-row: 1/3;
+    }
+
+    .footer__icon-sk {
+      grid-column: 1/3;
+    }
+
+    .footer__icon-part {
+      grid-column: 3/5;
+    }
+
+    .footer__icon-w {
+      grid-column: 1/2;
+    }
+
+    .footer__icon-tel {
+      grid-column: 2/3;
+    }
+
+    .footer__icon-tvit {
+      padding-right: 10px;
+      grid-column: 3/4;
+    }
+
+    .footer__icon-dz {
+      grid-column: 4/5;
+    }
+
+    .footer__line {
+      margin-bottom: 24px;
+      height: 1px;
+      background: #9d9d9d;
+      opacity: 0.3;
+      grid-column: 1/13;
+      grid-row: 4/5;
+    }
+
+    .footer__data {
+      padding: 0 16px 20px 16px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #fff;
+      opacity: .7;
+      grid-column: 1/4;
+    }
+
+    .footer__doc {
+      padding: 0 16px 20px 16px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #fff;
+      opacity: .7;
+      grid-column: 4/8;
+    }
+
+    .footer__mani {
+      padding: 0 16px 37px 16px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #fff;
+      opacity: 0.7;
+      grid-column: 8/13;
+
+    }
+  }

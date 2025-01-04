@@ -1,0 +1,682 @@
+.crumbs__nav-briefly,
+.crumbs__nav-lonu {
+  display: none;
+}
+.anxiety {
+  margin: 0 auto;
+  padding: 1.4rem 1rem 0 1rem;
+  padding-top: 1.4rem;
+  /* width: 320px; */
+  box-sizing: border-box;
+  font-size: .9rem;
+  font-weight: 400;
+}
+/* img{
+  width: 100%;
+} */
+
+h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 133%;
+  color: #333;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.1rem18px;
+  line-height: 144%;
+  color: #333;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.btn {
+  cursor: pointer;
+  background: #35b3a9;
+  color: #fff;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #2d4e4c;
+}
+
+.crumbs__nav-briefly,
+.crumbs__nav-lonu {
+  display: none;
+}
+
+.fear__publication {
+  margin: 0 .2rem 1rem 0;
+}
+
+.fear__autors,
+.fear__autor,
+.fear__data {
+  line-height: 143%;
+  color: #494949;
+}
+
+.fear__cont {
+  /* margin-bottom: 8px; */
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+.fear__wide{
+  width: 100%;
+}
+.fear__content {
+  margin: .6rem 0 1rem 1.3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+  text-decoration: underline;
+}
+
+.points li:before {
+  content: "\2022";
+  /* юникод точки */
+  color: #03b2a5;
+  /* Менять цвет */
+  font-weight: bold;
+  /* Менять жирность */
+  display: inline-block;
+  /* Расстояние между точкой и текстом */
+  width: 1em;
+  /* Задать значение расстояния */
+}
+
+.fear h3 {
+  margin-bottom: .6rem;
+}
+
+.fear__title>p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+
+.advices {
+  padding: 1rem 1rem .6rem 1rem;
+  margin-bottom: 1rem;
+  background: #f3f7fe;
+}
+
+.advices p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.advices span {
+  display: block;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.management {
+  margin-bottom: 1rem;
+  /* height: 374px; */
+}
+
+.management h3 {
+  margin-bottom: .6rem;
+}
+
+.management__content,
+.benefit__content {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.management p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333
+}
+.management__advice {
+  padding: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  background-image: url(/img/png/puddle.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.management__levo,
+.management__garb{
+  width: 100%;
+}
+.exercise-one,
+.exercise-ones {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+  background: #fefaec;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.oneblu {
+  background: rgba(3, 178, 165, 0.1);
+}
+
+
+.exercise-one h4,
+.exercise-ones h4 {
+  margin-bottom: .6rem;
+}
+
+.benefit {
+  margin-bottom: 1rem;
+}
+
+.benefit p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+.benefit__han{
+  width: 100%;
+}
+
+.exercise-two {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff3eb;
+}
+
+.exercise-two h4 {
+  margin-bottom: .6rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.exercise-two p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.doctor {
+  margin-bottom: 1rem;
+}
+
+.doctor p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #333;
+}
+
+.doctor__img-line {
+  height: 2rem;
+}
+
+.doctor__cha,
+.doctor__sunse,
+.doctor__img-line{
+  width: 100%;
+}
+
+.together{
+  padding: 20px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #e6f0fd;
+  border-radius: 1rem;
+}
+.together img{
+  width: 100%;
+}
+.together h3 {
+  padding-bottom: .6rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 133%;
+  /* text-align: center; */
+  color: #333;
+}
+.together p {
+  padding-bottom: .6rem;
+  line-height: 143%;
+  color: #333;
+}
+.together__detail {
+  border-radius: .2rem;
+  width: 239px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+
+
+.card {
+  margin-bottom: 1rem;
+  border: 1px solid #dedede;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: #fff;
+}
+
+.card-vrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  position: relative;
+}
+
+/* блок с конём в карточке */
+.card__unic {
+  margin: -1.4rem;
+  padding: 0;
+  position: absolute;
+}
+
+.card__laic {
+  margin: .6rem;
+  border-radius: .5rem;
+  padding: 0px .5rem;
+  /* width: 105px; */
+  height: 1.8rem;
+  background: rgba(243, 244, 248, 0.7);
+
+}
+
+.card__unic img {
+  margin-bottom: -.2rem;
+  width: 1.2rem;
+}
+
+
+.card__sptop,
+.cardmain__spdot {
+  font-weight: 600;
+  font-size: .9rem;
+  line-height: 143%;
+  color: #333;
+}
+.card-vrap__lilia {
+  margin: 0 auto;
+  width: 65%;
+  /* width: 62%; */
+  grid-column: 1 / 7;
+  /* justify-content: center; */
+}
+.card-vrap__krug{
+  margin: 0 auto;
+  /* display: inline-block; */
+  /* text-align: center; */
+  width: 100%;
+}
+
+.card-vrap__krug {
+  border-radius: 100%;
+}
+
+.card-vrap__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.card-vrap__profession {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.card-vrap__experience {
+  font-weight: 500;
+  line-height: 143%;
+  color: #a2a7b1;
+  text-align: right;
+  grid-column: 1 / 4;
+}
+
+.card-vrap__age {
+  padding-left: 8px;
+  font-weight: 500;
+  line-height: 143%;
+  color: #a2a7b1;
+  text-align: left;
+  grid-column: 4 / 7;
+}
+
+.card__line {
+  margin: 16px 0 16px 0;
+  border: 1px solid #dedede;
+}
+.card h4{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: #333
+}
+.card__content {
+  margin-bottom: 16px;
+  line-height: 143%;
+  color: #333;
+  text-align: center;
+}
+
+.card__detail {
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 250px;
+  height: 48px;
+  background: #35b3a9;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__detail:active {
+  cursor: pointer;
+  background: #27cec0;
+  color: #cfc9c9;
+}
+
+.praise{
+  width: 100%;
+}
+
+
+.proposal {
+  padding: 8px;
+  margin-bottom: 60px;
+  border: 1px solid #dedede;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.proposal h4 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #2963a3;
+  grid-column: 1 / 4;
+}
+.proposal p {
+  margin-bottom: 16px;
+  line-height: 143%;
+  color: #011632;
+  grid-column: 1 / 4;
+}
+
+.col {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #333;
+}
+
+.proposal__mani {
+  margin-bottom: 16px;
+  grid-column: 1/2;
+}
+.proposal__rub {
+  grid-column: 2/4;
+}
+.proposal__detail {
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 108px;
+  height: 48px;
+  background: #35b3a9;
+  grid-column: 1/3;
+}
+.proposal img {
+  margin: 20px 0 -10px 0;
+  display: block;
+  grid-column: 3/4;
+}
+
+
+
+@media screen and (min-width: 320px) {
+  .crumbs__nav-briefly,
+  .crumbs__nav-lonu{
+    display: none;
+  }
+}
+@media screen and (min-width: 414px) {
+  .crumbs__nav-briefly{
+    display: inline-block;
+  }
+  .management__advice{
+    padding: 2.3rem;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .crumbs__nav-lonu{
+    display: inline-block;
+  }
+  .fear h1{
+    font-weight: 700;
+font-size: 48px;
+line-height: 117%;
+color: #333;
+  }
+  .management__advice{
+    padding: 3.3rem;
+  }
+  /* .management{
+    position: relative;
+  } */
+  .management__levo{
+    margin: 24px 24px 24px 0;
+    width: 294px;
+    float: left;
+    /* position: absolute; */
+  }
+  .exercise-one{
+    margin-top: 12%;
+  }
+  .benefit__han{
+    margin-right: 24px;
+    width: 294px;
+    float: left;
+  }
+  .doctor{
+    position: relative;
+  }
+  .doctor__poza-cha{
+   width: 50%;
+    display: flex;
+    margin-right: 14px;
+    flex-direction: column;
+    row-gap: 16px;
+    float: left;
+  }
+  .doctor__poza-sunse{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .together{
+    width: 49%;
+    float: left;
+  }
+  .together img{
+    width: 100%;
+  }
+  
+  .card{
+    width: 49%;
+    float: right;
+  }
+  .praise{
+    padding: 0;
+    margin-bottom: 10px;
+    margin: 0 10px 0 0;
+    width: 49%;
+    float: left;
+    height: 237px;
+  }
+  .proposal{margin-bottom: 10px;
+    padding: 8px;
+    width: 49%;
+    /* float: right; */
+  }
+}
+@media screen and (min-width: 1024px){
+.anxiety{
+  padding: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr); */
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  column-gap: 16px;
+  grid-template-areas:    "fear            together"
+                          "fear            card"
+                          "advices         praise"
+                          "management      proposal"
+                          "exercise-one    ."
+                          "benefit ."
+                          "exercise-two ."
+                          "doctor ."
+                          "exercise-ones .";
+}
+.fear{
+/* grid-column: 1/4; */
+/* grid-row: 1/2; */
+grid-area: fear;
+max-height: 10%;
+}
+.advices{
+  /* grid-column: 1/4; */
+/* grid-row: 2/3; */
+grid-area: advices;
+}
+.management{
+  /* grid-column: 1/4; */
+  grid-area: management;
+}
+.exercise-one{
+  margin: 0;
+  /* grid-column: 1/4; */
+  grid-area: exercise-one;
+}
+.benefit{
+  /* grid-column: 1/4; */
+  grid-area: benefit;
+}
+.exercise-two{
+  /* grid-column: 1/4; */
+  grid-area: exercise-two;
+}
+.doctor{
+  /* grid-column: 1/4; */
+  grid-area: doctor;
+}
+.exercise-ones{
+  /* grid-column: 1/4; */
+  grid-area: exercise-ones;
+}
+
+
+.together{
+  width: 100%;
+  max-height: 100%;
+  /* margin: top; */
+  /* grid-column: 4/5; */
+/* grid-row: 1/2; */
+  /* grid-row: 1fr; */
+  grid-area: together;
+}
+.card{
+  width: 100%;
+  /* grid-column: 4/5; */
+  max-height: 100%;
+  grid-area: card;
+}
+.praise{
+  max-height: 100%;
+    margin-bottom: 20px;
+  width: 100%;
+  /* grid-column: 4/5; */
+  grid-area: praise;
+}
+.proposal{
+  width: 100%;
+  /* grid-column: 4/5; */
+  grid-area: proposal;
+  max-height: 23%;
+}
+}
+
+@media screen and (min-width: 1440px){
+  .header{padding: 40px 150px 0 120px;
+    /* padding: 20px 120px; */
+  }
+  .header__nav{
+    /* background-color: red; */
+    width: 70%;
+    /* justify-content: space-around; */
+  }
+  .header__nav ul li{
+    padding: 0 1.1rem;
+    font-weight: 500;
+font-size: 20px;
+line-height: 114%;
+letter-spacing: 0.02em;
+text-align: center;
+color: #333;
+  }
+  .anxiety{
+    padding: 20px 120px;
+    column-gap: 228px;
+    grid-template-columns: 60% 22%;
+  }
+}
